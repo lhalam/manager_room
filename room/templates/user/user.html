@@ -1,0 +1,18 @@
+{% extends 'room/base.html' %}
+
+{% block title %}
+Users
+{% endblock %}
+
+{% block content %}
+{% for user in users %}
+    <div>
+    {{ user.id }}
+    {{ user.first_name }}
+    {{ user.email }}
+    {{ user.last_name }}
+    {{ user.username }}
+    {{ user.password }}
+    </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'room/base.html' %}
+
+{% block title %}
+Lessons
+{% endblock %}
+
+{% block content %}
+{% for lesson in lessons %}
+    <div>
+        <h4>{{ lesson.name }}</h4>
+        <h4>{{ lesson.description }}</h4>
+        <h4>{{ lesson.time }}</h4>
+        <h4>{{ lesson.place }}</h4>
+        <h4>{{ lesson.timeout }}</h4>
+        <br>
+    </div>
+
+    {% endfor %}
+{% endblock %}

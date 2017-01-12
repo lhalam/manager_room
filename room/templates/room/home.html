@@ -1,0 +1,12 @@
+{% extends "room/base.html" %}
+{% block title %}
+Manager rooms
+{% endblock %}
+
+{% block content %}
+{% for room in rooms %}
+<h4><a href="room/{{room.id }}">{{ room.name }}</a></h4>
+
+<br>
+{% endfor %}
+{% endblock %}
